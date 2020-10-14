@@ -1,6 +1,6 @@
 # Junior Developer Resume
 
-![Imgur](https://i.imgur.com/1vlm2bx.jpg)
+![Imgur](https://i.imgur.com/Ch4bbgB.jpg?1)
 
 **Uladzislau Sasnouski**
 
