@@ -6,7 +6,7 @@
 
 ## Contacts
 
-**E-mail:** `vlad.rezonow@gmail.com`
+**E-mail:** `ulad.sasnouski@gmail.com`
 
 [**VK**](https://vk.com/id138170989)
 
@@ -59,7 +59,7 @@ Engineering Technology.
 
 ## English
 
-At the moment, my **English level is A1**. I am studying at an English school. Duration - **3 months**.
+At the moment, my **English level is A2**. I am studying at an English school. Duration - **6 months**.
 
 Previously studied English at school and college.
 
