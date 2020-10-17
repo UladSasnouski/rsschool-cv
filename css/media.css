@@ -1,0 +1,36 @@
+@media (max-width: 1850px){
+    .bgvideo{
+        display: none;
+    }
+}
+@media (max-width: 1020px){
+    .menu{
+        display: none;
+    }
+}
+@media (max-width: 780px){
+    .AboutMeTop{
+        display: block;
+        justify-content: center;
+        border-bottom: 2px solid #ffc222;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 640px){
+    .contentFlex {
+        display: block;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .headerLogo a {
+        color: #323232;
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 500px){
+    .AboutMeList {
+        display: block;
+    }
+}
