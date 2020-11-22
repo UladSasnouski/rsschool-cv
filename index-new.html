@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Meditation App</title>
+  </head>
+  <body>
+    <div class="app">
+        <div class="vid-container">
+            <video autoplay loop muted id="video" src="./video/Rain.mp4"></video>
+        </div>
+        <audio loop class="song-one">
+            <source src="./sounds/rain.mp3" />
+        </audio>
+        <audio loop class="song-two">
+            <source src="./sounds/thunder.mp3" />
+        </audio>
+        <audio loop class="song-three">
+            <source src="./sounds/rainChill.mp3" />
+        </audio>
+        <div class="container" id="container">
+            <div class="time-menu">
+                <div class="time-apps" id="time-apps">
+                    <img src="./svg/apps.svg" alt="apps">
+                </div>
+                <div class="time-all bgOpas" id="time-all">
+                    <img src="./svg/menu.svg" alt="all">
+                </div>
+            </div>
+            <div class="time-select" id="time-select">
+                <div class="time-buttons">
+                    <button data-time="120" class="hoverbutton">2 Min</button>
+                    <button data-time="300" class="medium-mins hoverbutton">5 Min</button>
+                    <button data-time="600" class="long-mins hoverbutton">10 Min</button>
+                    <button data-time="1800" class="long-mins hoverbutton">30 Min</button>
+                    <button data-time="2700" class="long-mins hoverbutton">45 Min</button>
+                    <button data-time="3600" class="long-mins hoverbutton">1 Hour</button>
+                </div>
+                <div class="time-control">
+                    <h3 class="time-display">0:00</h3>
+                    <div class="time-control-container">
+                        <button><img src="./svg/play.svg" alt="play" class="play" data-play id="0"></button>
+                        <div class="time-control-title">
+                            <p class="p-one">Шум дождя - 3D</p>
+                            <div class="time-control-volume">
+                                <input id="volumeSliderOne" type="range" min="0" max="100" value="100" step="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-control-container">
+                        <button><img src="./svg/play.svg" alt="play" class="play" data-play id="1"></button>
+                        <div class="time-control-title">
+                            <p class="p-two">Раскаты грома - 3D</p>
+                            <div class="time-control-volume">
+                                <input id="volumeSliderTwo" type="range" min="0" max="100" value="100" step="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="time-control-container">
+                        <button><img src="./svg/play.svg" alt="play" class="play" data-play id="2"></button>
+                        <div class="time-control-title">
+                            <p>Релакс музыка - 3D</p>
+                            <div class="time-control-volume">
+                                <input id="volumeSliderThree" type="range" min="0" max="100" value="100" step="1">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnFullscreen" type="button"><img src="./svg/diagonal-enlarge.svg"></button>
+                </div>
+            </div>
+            <div class="menu-list hidden" id="menu-list">
+                <div class="menu-list-apps">
+                    <div class="menu-list-item">
+                        <img data-sound id="0" src="./svg/next.svg" alt="next">
+                        <p>Звуки дождя</p>
+                    </div>
+                    <div class="menu-list-item">
+                        <img data-sound id="1" src="./svg/next.svg" alt="next">
+                        <p>Звуки камина</p>
+                    </div>
+                    <div class="menu-list-item">
+                        <img data-sound id="2" src="./svg/next.svg" alt="next">
+                        <p>Звуки природы</p>
+                    </div>
+                    <div class="menu-list-item">
+                        <img data-sound id="3" src="./svg/next.svg" alt="next">
+                        <p>Звуки моря</p>
+                    </div>
+                    <div class="menu-list-item">
+                        <img data-sound id="4" src="./svg/next.svg" alt="next">
+                        <p>Звуки ветра</p>
+                    </div>
+                    <div class="menu-list-item">
+                        <img data-sound id="5" src="./svg/next.svg" alt="next">
+                        <p>Звуки города</p>
+                    </div>
+                    <div class="menu-list-item">
+                        <img data-sound id="6" src="./svg/next.svg" alt="next">
+                        <p>Звуки леса</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
