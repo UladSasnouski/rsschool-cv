@@ -1,6 +1,5 @@
 var numbers = document.querySelectorAll("[data-number]"),
     operations = document.querySelectorAll("[data-operator]"),
-    stepenBtn = document.getElementById('.stepen'),
     clearBtns = document.querySelectorAll("[data-clear]"),
     decimalBtn = document.getElementById('decimal'),
     negativeBtn = document.getElementById('negative'),
@@ -56,10 +55,10 @@ function operationPress(op) {
     memoryNewNumber = true;
     switch(memoryPendingOperation) {
       case '+':
-        memoryCurrentNumber = (memoryCurrentNumber * 10000 + +localOperationMemory * 10000) / 10000;
+        memoryCurrentNumber = (memoryCurrentNumber + +localOperationMemory).toFixed(10);
         break;
       case '-':
-        memoryCurrentNumber = (memoryCurrentNumber * 10000 - +localOperationMemory * 10000) / 10000;
+        memoryCurrentNumber = (memoryCurrentNumber - +localOperationMemory).toFixed(10);
         break;
       case '*':
         memoryCurrentNumber = +(memoryCurrentNumber * +localOperationMemory).toFixed(10);
