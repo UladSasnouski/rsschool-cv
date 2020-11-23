@@ -1,0 +1,57 @@
+:root {
+  --base: #2e2e2e;
+  --spacing: 2px;
+  --blur: (0px);
+  --width: 40%;
+  --transform: rotate(0deg);
+  --grayscale: (0%);
+  --sepia: (0%);
+  --opacity: (0%);
+  --brightness: (100%);
+  --contrast: (100%);
+  --saturate: (100%);
+  --hue-rotate: (0deg);
+  --invert: (0%);
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur)) grayscale(var(--grayscale)) sepia(var(--sepia)) opacity(var(--opacity)) brightness(var(--brightness)) contrast(var(--contrast)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate)) invert(var(--invert));
+  width: var(--width);
+  transform: rotate(var(--transform));
+}
+
+.hl {
+  color: var(--base);
+}
+
+body {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e4cfb5;
+  color: rgb(209, 100, 37);
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  max-width: 1020px;
+}
+
+input {
+  width: 100px;
+}
+
+.container {
+  max-width: 120px;
+}
