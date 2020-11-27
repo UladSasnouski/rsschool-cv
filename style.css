@@ -1,17 +1,17 @@
 :root {
   --base: #2e2e2e;
   --spacing: 2px;
-  --blur: (0px);
+  --blur: 0px;
   --width: 40%;
   --transform: rotate(0deg);
-  --grayscale: (0%);
-  --sepia: (0%);
-  --opacity: (0%);
-  --brightness: (100%);
-  --contrast: (100%);
-  --saturate: (100%);
-  --hue-rotate: (0deg);
-  --invert: (0%);
+  --grayscale: 0%;
+  --sepia: 0%;
+  --opacity: 100%;
+  --brightness: 100%;
+  --contrast: 100%;
+  --saturate: 100%;
+  --hue-rotate: 0deg;
+  --invert: 0%;
 }
 
 img {
@@ -24,6 +24,11 @@ img {
 
 .hl {
   color: var(--base);
+}
+
+#reset {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 body {
