@@ -18,6 +18,7 @@ const timeSelect = document.querySelectorAll(".time-buttons button");
 const timeDisplay = document.querySelector(".time-display");
 let fakeDuration = 600;
 let activeTimer = false;
+var timer;
 
 
 document.querySelector('video').playbackRate = 0.8;
@@ -55,7 +56,7 @@ function timeupdate() {
 	else {
     fakeDuration--
     timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(fakeDuration % 60)}`;
-		var timer = setTimeout(timeupdate, 1000);
+		timer = setTimeout(timeupdate, 1000);
 	}
 };
 
@@ -228,6 +229,8 @@ function numberPress(number) {
       targetMenu.style.background = '#312347';
       menu.style.background = '#312347';
       app.style.background = '#312347';
+      targetMenu.style.color = '#ffffff';
+      targetApp.style.color = '#ffffff';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");
@@ -246,6 +249,8 @@ function numberPress(number) {
       targetMenu.style.background = '#353c3f';
       menu.style.background = '#353c3f';
       app.style.background = '#353c3f';
+      targetMenu.style.color = '#ffffff';
+      targetApp.style.color = '#ffffff';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");
