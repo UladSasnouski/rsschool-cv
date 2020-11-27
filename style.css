@@ -63,6 +63,10 @@ h1 {
     margin-right: 30px;
     text-decoration: none;
     color: white;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom-right-radius: 40% 20%;
+    border-top-left-radius: 40% 20%;
 }
 
 @media screen and (max-width: 750px) {
