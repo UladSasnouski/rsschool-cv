@@ -31,6 +31,7 @@ html {
     color: white;
     background: rgba(233, 228, 216, 0.9);
     text-shadow: 0 0 .5rem black;
+    cursor: pointer;
   }
   
   .playing {
@@ -67,6 +68,7 @@ html {
     margin-left: -35px;
     margin-right: -35px;
     z-index: 2;
+    cursor: pointer;
    }
 
    .key-white {
