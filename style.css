@@ -3,8 +3,7 @@ body {
 }
 
 .img-box {
-  flex-grow: 1;
-	background-size: 700px 600px;
+  flex: 1;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition: 1s;
@@ -17,7 +16,6 @@ body {
 }
 
 .img-box:hover {
-	background-size: 1200px 600px;
 	flex-grow: 3;
 	filter: grayscale(0) contrast(120%);
   opacity: 1;
@@ -32,6 +30,7 @@ body {
 .container-images {
 	width: 100%;
 	height: 500px;
+	flex: 3;
 	display: flex;
   border: 1px solid #d6d6d6;
   overflow: hidden;
@@ -146,9 +145,6 @@ body {
 .panel3 { background-image:url(img/TGL2.png); }
 
 @media only screen and (max-width: 1200px) {
-  .container-images {
-		height: 500px;
-	}
 	.content-text {
     font-size: 10px;
     overflow: auto;
@@ -159,18 +155,9 @@ body {
   .content-text a {
 		font-size: 12px;
   }
-  .img-box {
-		background-size: 600px 500px;
-	}
-	.img-box:hover {
-		background-size: 1000px 500px;
-	}
 }
 
 @media only screen and (max-width: 700px) {
-  .container-images {
-		height: 400px;
-  }
   .content-title {
 		font-size: 12px;
   }
@@ -184,18 +171,9 @@ body {
   .content-text a {
 		font-size: 10px;
   }
-  .img-box {
-		background-size: 500px 400px;
-	}
-	.img-box:hover {
-		background-size: 800px 400px;
-	}
 }
 
 @media only screen and (max-width: 600px) {
-  .container-images {
-		height: 300px;
-  }
   .content-title {
     width: 40%;
 		font-size: 10px;
@@ -215,18 +193,9 @@ body {
   .content-text a {
 		font-size: 10px;
   }
-  .img-box {
-		background-size: 400px 300px;
-	}
-	.img-box:hover {
-		background-size: 700px 300px;
-	}
 }
 
  @media only screen and (max-width: 480px) {
-	.container-images {
-		height: 250px;
-  }
   .content-title {
     width: 30%;
 		font-size: 8px;
@@ -236,12 +205,6 @@ body {
 	}
 	.bor-top-bottom::after {
 		bottom: 2px;
-	}
-	.img-box {
-		background-size: 350px 250px;
-	}
-	.img-box:hover {
-		background-size: 600px 250px;
 	}
 	.content-text {
     font-size: 6px;
