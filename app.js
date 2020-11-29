@@ -157,6 +157,8 @@ function numberPress(number) {
       targetMenu.style.background = '#b4b4b4';
       menu.style.background = '#b4b4b4';
       app.style.background = '#b4b4b4';
+      targetMenu.style.color = '#000000';
+      targetApp.style.color = '#000000';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");
@@ -175,6 +177,8 @@ function numberPress(number) {
       targetMenu.style.background = '#ff8d3f';
       menu.style.background = '#ff8d3f';
       app.style.background = '#ff8d3f';
+      targetMenu.style.color = '#000000';
+      targetApp.style.color = '#000000';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");
@@ -193,6 +197,8 @@ function numberPress(number) {
       targetMenu.style.background = '#b34929';
       menu.style.background = '#b34929';
       app.style.background = '#b34929';
+      targetMenu.style.color = '#000000';
+      targetApp.style.color = '#000000';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");
@@ -211,6 +217,8 @@ function numberPress(number) {
       targetMenu.style.background = '#488a99';
       menu.style.background = '#488a99';
       app.style.background = '#488a99';
+      targetMenu.style.color = '#000000';
+      targetApp.style.color = '#000000';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");
@@ -269,6 +277,8 @@ function numberPress(number) {
       targetMenu.style.background = '#208444';
       menu.style.background = '#208444';
       app.style.background = '#208444';
+      targetMenu.style.color = '#000000';
+      targetApp.style.color = '#000000';
       targetApp.classList.remove("hidden");
       targetMenu.classList.add("hidden");
       menu.classList.add("bgOpas");

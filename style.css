@@ -146,12 +146,14 @@ button:active {
   max-width: 30vh;
   height: 100vh;
   top: 0;
+  overflow: auto;
 }
 .menu-list {
   background-color: #b4b4b4;
   max-width: 30vh;
   height: 100vh;
   top: 0;
+  overflow: auto;
 }
 
 .sound-picker button {
