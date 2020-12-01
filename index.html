@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <div class="player">
+        <video class="player__video viewer" src="https://r2---sn-qpbpfxc-q0ce.googlevideo.com/videoplayback?expire=1606875766&ei=FqbGX97cFtfg7gO_sbuACQ&ip=84.203.98.110&id=o-AJ0ew85IHUlk2MYQ4qybpNBL0Lc7X4NO4g48_0qsK66b&itag=22&source=youtube&requiressl=yes&mh=R2&mm=31%2C29&mn=sn-qpbpfxc-q0ce%2Csn-q0c7rn76&ms=au%2Crdu&mv=m&mvi=2&pcm2cms=yes&pl=18&initcwndbps=910000&vprv=1&mime=video%2Fmp4&ns=1Zj61aB59ir0L538sHX-jKEF&ratebypass=yes&dur=165.511&lmt=1542756164757500&mt=1606853815&fvip=5&c=WEB&txp=5431432&n=NMG_8nlcAmyPyVAlM&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAOeIhexU3QDxY1fcjL3MQiBCVxseCIKFXR7qEe9Vdk-0AiEAnz5ofTXGJEJaV_cIBo8qfPeIUdF6Y5HrFoYE71fr3Js%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgWExpyTVFqX8Nam8OmPXvA15TCGSM84c2ltNm16D7UQQCIADlL_9jYRvpGhLtDeLx9xR24msMw0afTgZ655Ol1WoD&title=%D0%9C%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD%D1%8B%20%E2%80%94%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%82%D1%80%D0%B5%D0%B9%D0%BB%D0%B5%D1%80%20(2015)" ></video>
+   
+        <div class="player__controls">
+            <div class="progress">
+                <div class="progress__filled">
+
+                </div>
+            </div>
+            <div class="controller">
+                <div class="controller-left">
+                    <button class="play toggle"><img id="play" src="./icons/play.svg" alt=""></button>
+                    <button id="volume" class="volume"><img img id="volume-image" src="./icons/volume-up.svg" alt=""></button>
+                    <input id="mute" type="range" name="volume" class="volume-slider" min="0" max="1" step="0.05" value="1">
+                    <time class="time" id="time"></time>
+                </div>
+                <div class="controller-right">
+                    <button id="speed" class="speed"><img src="./icons/speed.svg" alt=""></button>
+                    <input id="reset" type="range" name="playbackRate" class="speed-slider" min="0.5" max="2" step="0.1" value="1"> 
+
+                    <button data-skip="-10" class="player__button speed"><img src="./icons/replay-10.svg" alt=""></button>
+                    <button data-skip="10" class="player__button speed"><img src="./icons/forward-10.svg" alt=""></button>
+
+                    <button id="fullscreen" class="fullscreen"><img id="fullscreen-image" src="./icons/fullscreen-up.svg" alt=""></button>  
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="./main.js"></script>
+  </body>
+  </html>
