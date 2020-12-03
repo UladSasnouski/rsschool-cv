@@ -50,7 +50,7 @@ header{
 
 .headerLogo a {
     color: #323232;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 36px;
 }
 
@@ -90,7 +90,7 @@ header{
 
 .AboutMeTop{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 2px solid #ffc222;
 }
 
@@ -121,6 +121,37 @@ header{
     line-height: 24px;
     color: #212020;
     font-family: 'Roboto' sans-serif;
+    margin-bottom: 10px;
+}
+
+.ExperMeTitle{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212020;
+    font-family: 'Roboto' sans-serif;
+    margin-bottom: 20px;
+}
+.TitleExper {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212020;
+    font-family: 'Roboto' sans-serif;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    min-width: 200px;
+}
+
+.TextExper{
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    color: #000;
+}
+
+.Exper {
+    display: flex;
+    justify-content: start;
     margin-bottom: 10px;
 }
 
@@ -237,6 +268,7 @@ header{
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 15px;
+    border-bottom: 2px solid #ffc222;
 }
 
 .Education{
